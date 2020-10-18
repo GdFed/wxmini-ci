@@ -1,0 +1,47 @@
+<view class="page page-face">
+  <view class="top-title">门店信息</view>
+  <view class="deal-detail">
+    <view class="top">
+      <view class="name">闲鱼小站x回收宝<text>（{{storeInfo.store||'加载中...'}}）</text><view class="tip">当面回收 秒拿钱</view></view>
+      <view class="more" onTap="moreStores">更多门店 <image src="/static/image/face/middlemore_icon_gray.png" mode="aspectFill" /> </view>
+    </view>
+    <view class="info">
+      <view class="left">
+        <view class="time" a:if="{{storeInfo.openStatus==1}}">营业中 {{storeInfo.openTime}}</view>
+        <view class="time" a:else>休息中</view>
+        <view class="distance">
+          离你最近 {{storeInfo.distance}}
+          <view a:if="{{storeInfo.tel}}" onTap="callStore" class="call">
+            <image src="/static/image/face/store_icon_tel.png" mode="aspectFill" />
+            电话联系
+          </view>
+        </view>
+      </view>
+      <view class="right">
+        <image src="{{storeInfo.storePic[0]||'https://s1.huishoubao.com/static/m/common/home_image_engineer.png'}}" mode="aspectFill" />
+      </view>
+    </view>
+    <view class="addr">地址：{{storeInfo.addressTip||'暂无信息'}}</view>
+    <view class="storer">
+      <view class="avatar">
+        <image src="/static/image/face/manager_image.png" mode="aspectFill" />
+        <view class="position">店长</view>
+      </view>
+      <view class="contact">
+        <view class="sale">{{storeInfo.notice}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="special-service">
+    <view class="top-title">特色服务</view>
+    <view class="content">
+      <view class="ser" a:for="{{storeInfo.serviceList}}">
+        <image class="{{item.status==1?'choiced':''}}" src="{{item.icon}}" mode="aspectFill" />
+        <view class="{{item.status==1?'choiced':''}}">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="eval-btn {{iphoneX?'iphoneX':''}}">
+    <view onTap="gotoEval" class="inner">立即回收</view>
+  </view>
+</view>

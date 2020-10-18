@@ -1,0 +1,482 @@
+.page{
+    padding-bottom: 128rpx;
+}
+.page.iphoneX{
+    padding-bottom: 168rpx;
+}
+.contact-button{
+    position: fixed;
+    bottom: 170rpx;
+    right: 0;
+    z-index: 97;
+    transform: translate(0, 0);
+    transition: all ease 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-button.hide{
+    transition: all ease 0.5s;
+    transform: translate(88rpx, 0);
+}
+.contact-button image{
+    width: 140rpx;
+    height: 140rpx;
+    margin-bottom: 28rpx;
+}
+.search-wrap{
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 24rpx 0;
+}
+.search{
+    width: 698rpx;
+    height: 60rpx;
+    border-radius: 30rpx;
+    padding: 0 26rpx;
+    box-sizing: border-box;
+    background: #F1F1F1;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon{
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 8rpx;
+}
+.search-txt{
+    flex: 1;
+    color: #999;
+    font-size: 24rpx;
+    line-height: 60rpx;
+}
+.swiper, .swiper-item, .swiper image{
+    width: 100%;
+    height: 100%;
+}
+.top-banner{
+    width: 100%;
+    height: 280rpx;
+    position: relative;
+}
+.indicators{
+    position: absolute;
+    bottom: 0;
+    right: 6rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indicators .item{
+    width: 8rpx;
+    height: 8rpx;
+    border-radius: 4rpx;
+    background: #fff;
+    opacity: .6;
+    margin: 12rpx 6rpx;
+}
+.indicators .item.current{
+    width: 16rpx;
+    opacity: 1;
+}
+.modal-title{
+    padding: 20rpx 24rpx;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    line-height: 44rpx;
+    color: #2C2C2C;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.modal-title .tips{
+    margin-left: 20rpx;
+    padding: 0 20rpx;
+    font-size: 24rpx;
+    line-height: 34rpx;
+    color: #777;
+    font-weight: normal;
+    position: relative;
+}
+.modal-title .tips::before{
+    position: absolute;
+    content: '';
+    width: 2rpx;
+    height: 24rpx;
+    background: #D8D8D8;
+    border-radius: 2rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.modal-cont{
+    width: 702rpx;
+    border-radius: 12rpx;
+    margin: 0 auto 12rpx;
+    background: #fff;
+    overflow: hidden;
+}
+.self-product{
+    background: #3c3c3c;
+    width: 702rpx;
+    border-radius: 12rpx;
+    margin: 0 auto 24rpx;
+    position: relative;
+    padding: 14rpx 24rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.self-product .info{
+    display: flex;
+    align-items: center;
+}
+.self-product .info .pic{
+    width: 104rpx;
+    height: 104rpx;
+    border-radius: 6rpx;
+    margin-right: 12rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.self-product .info .pic image{
+    width: 80%;
+    height: 80%;
+}
+.self-product .info .name-price{
+    display: flex;
+    flex-direction: column;
+    max-width: 320rpx;
+    font-size: 24rpx;
+    line-height: 34rpx;
+    color: #fff;
+}
+.self-product .info .name{
+    font-weight: 32rpx;
+    line-height: 44rpx;
+    margin-bottom: 6rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.self-product .info .price{
+    display: flex;
+    align-items: center;
+}
+.self-product .info .price text{
+    display: flex;
+    align-items: center;
+    color: #FF4545;
+}
+.self-product .price .num{
+    font-size: 36rpx;
+    line-height: 44rpx;
+}
+.self-product .eval-btn{
+    background-image: linear-gradient(123deg, #FFFC52 0%, #FFE620 98%);
+    border-radius: 34rpx;
+    height: 68rpx;
+    width: 192rpx;
+    line-height: 68rpx;
+    text-align: center;
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #333;
+}
+.self-product .power{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 108rpx;
+    height: 28rpx;
+    line-height: 28rpx;
+    text-align: center;
+    font-size: 18rpx;
+    color: #fff;
+    background: #3EB068;
+    border-radius: 0 12rpx 0 12rpx;
+}
+.modal-cont .bg{
+    width: 100%;
+}
+.class-eval{
+    width: 100%;
+    padding: 16rpx 24rpx 24rpx;
+    box-sizing: border-box;
+}
+.class-eval .classes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.class-eval .classes .item{
+    width: 208rpx;
+    height: 120rpx;
+    position: relative;
+}
+.class-eval .classes .item .name{
+    position: absolute;
+    top: 16rpx;
+    left: 16rpx;
+    font-size: 24rpx;
+    font-weight: bold;
+    line-height: 34rpx;
+    color: #2c2c2c;
+}
+.class-eval .classes .item .bg{
+    width: 100%;
+    height: 100%;
+}
+.class-eval .classes .item .power{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 72rpx;
+    height: 28rpx;
+}
+.class-eval .btn{
+    width: 654rpx;
+    height: 84rpx;
+    background-image: linear-gradient(90deg, #FFF200 0%, #FFE100 100%);
+    border-radius: 42rpx;
+    margin-top: 24rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.class-eval .btn .inner{
+    position: relative;
+    text-align: center;
+    font-size: 32rpx;
+    line-height: 44rpx;
+    font-weight: bold;
+    color: #333;
+}
+.class-eval .btn .inner image{
+    position: absolute;
+    right: -90rpx;
+    top: 0;
+    background-image: linear-gradient(135deg, #FF6E52 0%, #FF4642 100%);
+    border-radius: 12rpx 15rpx 15rpx 0;
+    width: 82rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    font-size: 20rpx;
+    text-align: center;
+    color: #fff;
+}
+.modal-cont .tips{
+    padding: 20rpx 24rpx;
+    box-sizing: border-box;
+    border-top: 1rpx solid #ececec;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26rpx;
+    color: #2C2C2C;
+}
+.modal-cont .tips image{
+    width: 8rpx;
+    height: 12rpx;
+}
+.center-banner{
+    width: 702rpx;
+    height: 110rpx;
+    margin: 20rpx auto 12rpx;
+    border-radius: 12rpx;
+    overflow: hidden;
+}
+.center-banner .swiper-item image{
+    border-radius: 12rpx;
+}
+
+.store-eval{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24rpx;
+    box-sizing: border-box;
+}
+.store-eval .info{
+    display: flex;
+    flex-direction: column;
+}
+.store-eval .info .name{
+    display: flex;
+    align-items: center;
+    font-size: 24rpx;
+    line-height: 34rpx;
+    color: #2C2C2C;
+}
+.store-eval .info .name image{
+    width: 244rpx;
+    height: 32rpx;
+    margin-right: 12rpx;
+}
+.store-eval .info .name view{
+    width: 200rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.store-eval .info .location-person{
+    font-size: 24rpx;
+    line-height: 34rpx;
+    color: #999;
+    margin-top: 6rpx;
+}
+.store-eval .info .location-person text{
+    margin-right: 16rpx;
+}
+.store-eval .eval-btn{
+    background-image: linear-gradient(90deg, #FFF200 0%, #FFE100 100%);
+    border-radius: 34rpx;
+    width: 192rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #333;
+    font-weight: bold;
+}
+.products{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.products .item{
+    background: #FFF;
+    border-radius: 12rpx;
+    width: 228rpx;
+    height: 372rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24rpx 20rpx;
+    box-sizing: border-box;
+    margin-bottom: 8rpx;
+    margin-right: 8rpx;
+    position: relative;
+}
+.products .item:nth-of-type(3n){
+    margin-right: 0;
+}
+.products .item .tip{
+    position: absolute;
+    top: 18rpx;
+    right: 18rpx;
+    width: 90rpx;
+    height: 30rpx;
+}
+.products .tip image{
+    width: 100%;
+    height: 100%;
+}
+.products .item .pic{
+    width: 160rpx;
+    height: 160rpx;
+    margin-bottom: 12rpx;
+}
+.products .pic image{
+    width: 100%;
+    height: 100%;
+}
+.products .item .name{
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #2C2C2C; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.products .item .price{
+    font-size: 22rpx;
+    font-weight: bold;
+    line-height: 32rpx;
+    color: #FF6464;
+}
+.products .item .price text{
+    font-size: 32rpx;
+    line-height: 44rpx;
+}
+.products .item .price text.er{
+    font-size: 18rpx;
+    line-height: 26rpx;
+}
+.products .item .btn{
+    margin-top: 12rpx;
+    width: 172rpx;
+    height: 56rpx;
+    background-image: linear-gradient(90deg, #FFF200 0%, #FFE100 100%);
+    border-radius: 28rpx;
+    line-height: 56rpx;
+    text-align: center;
+    font-size: 26rpx;
+    color: #333;
+    font-weight: bold;
+}
+.more-product {
+    width: 100%;
+    font-size: 24rpx;
+    line-height: 34rpx;
+    color: #a6a6a6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more-product image{
+    width: 24rpx;
+    height: 24rpx;
+}
+.questions{
+    width: 100%;
+    padding: 16rpx 24rpx;
+    box-sizing: border-box;
+}
+.questions .question{
+    width: 100%;
+    margin: 16rpx 0;
+}
+.questions .q-title{
+    width: 100%;
+    background: #F8F8F8;
+    border-radius: 8rpx;
+    line-height: 62rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #2C2C2C;
+    padding-left: 24rpx;
+    box-sizing: border-box;
+    margin-bottom: 20rpx;
+}
+.questions .q-answer{
+    font-size: 13px;
+    color: #777;
+    line-height: 36rpx;
+}
+.more-question{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32rpx;
+}
+.more-question text{
+    font-size: 22rpx;
+    color: #A6A6A6;
+    text-align: center;
+    line-height: 32rpx;
+}
+.nobg .modal-cont{
+    background: transparent;
+}

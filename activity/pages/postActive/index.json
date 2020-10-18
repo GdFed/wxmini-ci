@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "邮寄得5元",
+  "usingComponents": {
+    "modal": "mini-antui/es/modal/index"
+  }
+}

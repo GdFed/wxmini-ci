@@ -1,0 +1,18 @@
+
+<view class="tapbar {{iphoneX?'iphonex':''}}">
+   <image class="bg" src="/static/image/toolbar_bg.png" mode="aspectFill" />
+   <view data-url="{{item.url}}" data-index="{{index}}" data-title="{{item.txt}}" onTap="toTap" class="tap" a:for="{{taps}}">
+      <block a:if="{{index!=1}}">
+         <image a:if="{{choiced==index}}" src="{{item.choicedIcon}}" mode="aspectFill" />
+         <image a:else src="{{item.icon}}" mode="aspectFill" />
+         <view class="txt {{choiced==index?'choiced':''}}">{{item.txt}}</view>
+      </block>
+      <block a:else>
+       <view class="eval">
+         <view class="cont">
+            <image src="{{item.icon}}" mode="aspectFill" />
+         </view>
+       </view>
+      </block>
+   </view>
+</view>

@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/h5/h5"
+  ],
+  "subPackages": [
+    {
+      "root": "activity",
+      "pages": [
+        "pages/apple100/index",
+        "pages/postActive/index",
+        "pages/superCoupon/index",
+        "pages/superCoupon/list",
+        "pages/superSeason/index",
+        "pages/superSeason/list"
+      ]
+    },
+    {
+      "root": "pages/face",
+      "pages": [
+        "index",
+        "stores/index"
+      ]
+    }
+  ],
+  "window": {
+    "defaultTitle": "回收宝信用回收"
+  }
+}

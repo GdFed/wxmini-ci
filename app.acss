@@ -1,0 +1,21 @@
+page {
+  flex: 1;
+  display: flex;
+  background: #F5F5F9;
+  box-sizing: border-box;
+}
+
+.page {
+  /* font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif; */
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  font-size: 24rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: transparent;
+}

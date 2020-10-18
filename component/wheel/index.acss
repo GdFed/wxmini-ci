@@ -1,0 +1,56 @@
+.wheel{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+image{
+    width: 100%;
+}
+.wheel form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.wheel .btn{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.wheel .btn image{
+    width: 100%;
+    height: 100%;
+}
+.wheel .list{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+}
+.wheel .list .item{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-origin: bottom center;
+    width: 180rpx;
+}
+.wheel .list .item text{
+    font-size: 19rpx;
+    font-weight: 600;
+    text-align: center;
+    color: #0008AB;
+    padding-top: 50rpx;
+}
+.wheel .list .item image{
+    width: 100rpx;
+}

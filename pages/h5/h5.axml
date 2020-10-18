@@ -1,0 +1,3 @@
+<view>
+  <web-view  a:if="{{link}}"  src="{{link}}"></web-view>
+</view>

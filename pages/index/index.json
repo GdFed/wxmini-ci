@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "回收宝信用回收",
+  "usingComponents": {
+    "modal": "mini-antui/es/modal/index",
+    "tapbar": "/component/tapbar/index"
+  }
+}

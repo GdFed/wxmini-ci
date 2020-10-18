@@ -1,0 +1,15 @@
+
+<view class="wheel">
+   <view class="list" style="{{wheelStyle}}">
+      <image  class="bg" src="{{wheelInfo.bgImg}}" mode="widthFix" />
+      <view class="item" style="{{'transform: translateX(-50%) rotate('+(rotateInit + 360*index/wheelInfo.prizeList.length)+'deg);'}}" a:for="{{wheelInfo.prizeList}}">
+         <text>{{item.prizeName}}</text>
+         <image src="{{item.imgUrl}}" mode="widthFix" />
+      </view>
+   </view>
+   <form onSubmit="onSubmit" report-submit>
+      <button formType="submit" class="btn">
+         <image src="{{wheelInfo.btnImg}}" />
+      </button>
+   </form>
+</view>

@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "超值加价神券任性送",
+  "usingComponents": {
+    "selfwheel": "/component/wheel/index",
+    "loop": "/component/loop/index",
+    "modal": "mini-antui/es/modal/index"
+  }
+}
