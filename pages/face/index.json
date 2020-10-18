@@ -1,6 +1,0 @@
-{
-  "defaultTitle": "到店回收",
-  "usingComponents": {
-    "modal": "mini-antui/es/modal/index"
-  }
-}
