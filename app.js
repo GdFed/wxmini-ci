@@ -1,7 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
-    // github
+    // github add user
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
