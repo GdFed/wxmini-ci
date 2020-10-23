@@ -1,7 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
-    // github demo 1023 10:32
+    // github demo 1023
     // 展示本地存储能力
     // let error = error
     var logs = wx.getStorageSync('logs') || []
