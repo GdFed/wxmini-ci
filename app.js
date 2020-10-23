@@ -3,6 +3,7 @@ App({
   onLaunch: function () {
     // github demo 1023 10:32
     // 展示本地存储能力
+    let error = error
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
